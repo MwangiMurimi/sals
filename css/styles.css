@@ -21,3 +21,9 @@ a:hover {
   color:black;
   text-decoration: underline black;
 }
+#order {
+  text-align: center;
+}
+#number {
+  width:50px;
+}

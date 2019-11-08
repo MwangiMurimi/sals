@@ -13,8 +13,23 @@
           <img id="logo" src="images/logo.png" width="150px">
         </div>
         <div class="col-8" id="topbar">
-          <h6> Order Online &nbsp&nbsp|&nbsp&nbsp <a href="#gallery">Gallery</a> &nbsp&nbsp|&nbsp&nbsp About Sal's </h6>
+          <h6> <a href="#order">Order Online</a> &nbsp&nbsp|&nbsp&nbsp <a href="#gallery">Gallery</a> &nbsp&nbsp|&nbsp&nbsp About Sal's </h6>
         </div>
+      </div>
+      <div class="row" id="order">
+        <div class="col-12">
+          <h6>Order online</h6>
+          <form>
+            <div class="form-group">
+              <label for="number">How many pizzas do you want to order?</label> &nbsp
+              <input type="number" id="number" min="0">
+            </div>
+            <div class="form-group">
+                <label for="range">What size should the pizza be?</label>
+                <input type="range" min="12" max="24" step="6" id="size">
+            </div>
+          </div>
+        </form>
       </div>
       <div class="row" id="gallery">
         <div class="col-6">
@@ -35,11 +50,6 @@
         <div class="col-6">
           <img src="images/6.jpg" width="100%">
         </div>
-      </div>
-      <div class="row">
-        <form>
-
-        </form>
       </div>
       <div class="row">
 
