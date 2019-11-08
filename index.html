@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sal's Pizza</title>
-    <link href="images/logo.png" rel="icon">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <img id="logo" src="images/logo.png" width="150px">
-        </div>
-        <div class="col-8" id="topbar">
-          <h6> <a href="#order">Order Online</a> &nbsp&nbsp|&nbsp&nbsp <a href="#gallery">Gallery</a> &nbsp&nbsp|&nbsp&nbsp About Sal's </h6>
-        </div>
+
+<head>
+  <title>Sal's Pizza</title>
+  <link href="images/logo.png" rel="icon">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <img id="logo" src="images/logo.png" width="150px">
       </div>
-      <div class="row" id="order">
-        <div class="col-12">
-          <h6>Sal's online</h6>
-          <form>
+      <div class="col-8" id="topbar">
+        <h6> <a href="#order">Order Online</a> &nbsp&nbsp|&nbsp&nbsp <a href="#gallery">Gallery</a>
+          &nbsp&nbsp|&nbsp&nbsp About Sal's </h6>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="order">
+      <div class="col-12">
+        <h6>Order online at Sal's</h6>
+        <form>
+          <div class="form-group">
+            <label for="number">How many pizzas do you want to order?</label> &nbsp
+            <input type="number" id="number" min="0">
+          </div>
+          <div class="order">
             <div class="form-group">
-              <label for="number">How many pizzas do you want to order?</label> &nbsp
-              <input type="number" id="number" min="0">
-            </div>
-            <div class="form-group">
-                <label for="size">What size do you want?</label> &nbsp
-                <input type="range" min="12" max="24" step="6" id="size">
+              <label for="size">What size do you want?</label> &nbsp
+              <input type="range" min="12" max="24" step="6" id="size">
             </div>
             <div class="form-group">
               <label for="crust">What kind of crust would you like?</label> &nbsp
-              <select name="crut">
-                  <option value="crispy">Crispy</option>
-                  <option value="stuffed">Stuffed</option>
-                  <option value="gluten-free">Gluten free</option>
-                </select>
+              <select name="crust">
+                <option value="crispy">Crispy</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="gluten-free">Gluten free</option>
+                <option value="thin">Thin</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="toppings">What toppings do you want?</label>
+              <p>
+                <input type="checkbox" value="cheese"> Mozzarella
+                <input type="checkbox" value="sauce"> Sal's special sauce
+                <input type="checkbox" value="Basil"> Basil
+                <input type="checkbox" value="macon"> Macon
+                <input type="checkbox" value="pepperoni"> Pepperoni
+                <input type="checkbox" value="sausage"> Sausage
+                <input type="checkbox" value="mushrooms"> Mushrooms
+              </p>
             </div>
           </div>
-        </form>
       </div>
-      <div class="row" id="gallery">
-        <div class="col-6">
-          <img src="images/1.jpg" width="100%">
-        </div>
-        <div class="col-6">
-            <img src="images/2.jpg" width="100%">
-        </div>
-        <div class="col-6">
-          <img src="images/3.jpg" width="100%">
-        </div>
-        <div class="col-6">
-          <img src="images/4.jpg" width="100%">
-        </div>
-        <div class="col-6">
-          <img src="images/5.jpg" width="100%">
-        </div>
-        <div class="col-6">
-          <img src="images/6.jpg" width="100%">
-        </div>
+      </form>
+    </div>
+    <div class="row" id="gallery">
+      <div class="col-6">
+        <img src="images/1.jpg" width="100%">
       </div>
-      <div class="row">
-
+      <div class="col-6">
+        <img src="images/2.jpg" width="100%">
+      </div>
+      <div class="col-6">
+        <img src="images/3.jpg" width="100%">
+      </div>
+      <div class="col-6">
+        <img src="images/4.jpg" width="100%">
+      </div>
+      <div class="col-6">
+        <img src="images/5.jpg" width="100%">
+      </div>
+      <div class="col-6">
+        <img src="images/6.jpg" width="100%">
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    <div class="row">
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
