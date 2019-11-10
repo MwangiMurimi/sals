@@ -1,29 +1,55 @@
-#topbar {
-  text-align:right;
-  display:inline-block;
-  width:100%;
-}
-h6 {
-  font:oblique larger bold;
-}
-#logo {
-  float:left;
-  clear:left;
-}
-.col-6 {
-  padding-right:0;
-  padding-left:0;
-}
-a {
-  color:black;
-}
-a:hover {
-  color:black;
-  text-decoration: underline black;
-}
-#order {
+body {
   text-align: center;
 }
+
+.row {
+  background-size: cover;
+}
+
+#topbar {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+h6 {
+  font: oblique larger bold;
+}
+
+#logo {
+  float: left;
+  clear: left;
+}
+
+.col-5 {
+  padding: 10px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline black;
+}
+
+.order {
+  text-align: center;
+}
+
 #number {
-  width:50px;
+  width: 50px;
+}
+
+textarea {
+  width: 50%;
+}
+
+.branches {
+  display: none;
+}
+
+.okay {
+  display: none;
 }

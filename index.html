@@ -21,59 +21,78 @@
     </div>
     <div class="row justify-content-center" id="order">
       <div class="col-12">
-        <h6>Order online at Sal's</h6>
-        <form>
+        <h6>Order online at Sal's Pizza</h6>
+        <form class="form">
           <div class="form-group">
-            <label for="number">How many pizzas do you want to order?</label> &nbsp
-            <input type="number" id="number" min="0">
+            <p><label for="size">Size</label></p>
+            <input type="range" id="size" min="12" max="24" step="6">
           </div>
-          <div class="order">
-            <div class="form-group">
-              <label for="size">What size do you want?</label> &nbsp
-              <input type="range" min="12" max="24" step="6" id="size">
-            </div>
-            <div class="form-group">
-              <label for="crust">What kind of crust would you like?</label> &nbsp
-              <select name="crust">
-                <option value="crispy">Crispy</option>
-                <option value="stuffed">Stuffed</option>
-                <option value="gluten-free">Gluten free</option>
-                <option value="thin">Thin</option>
+          <div class="form-group" id="crust">
+            <p><label for="crust">Crust</label></p>
+            <select class="crust">
+              <option id="crispy" value="crispy">Crispy</option>
+              <option id="stuffed" value="stuffed">Stuffed</option>
+              <option id="gluten-free" value="gluten-free">Gluten free</option>
+              <option id="thin" value="thin">Thin</option>
+            </select>
+          </div>
+          <div class="form-group" id="toppings">
+            <p><label for="toppings">Toppings</label></p>
+            <input type="checkbox" value="cheese" checked="checked"> Mozzarella
+            <input type="checkbox" value="sauce"> Sal's secret sauce
+            <input type="checkbox" value="basil"> Basil
+            <input type="checkbox" value="pepperoni"> Pepperoni
+            <input type="checkbox" value="macon"> Beef Macon
+            <input type="checkbox" value="mushrooms"> Mushrooms
+            <input type="checkbox" value="chicken"> Chicken
+          </div>
+          <div class="form-group">
+            <p><label for="number">Number of pizzas</label></p>
+            <input type="number" id="number" min="0" value="1">
+          </div>
+          <p><input type="submit" value="ORDER"></p>
+        </form>
+        <textarea rows="7" type="text" placeholder="Price" class="price text-center" readonly></textarea>
+        <form class="delivery">
+          <br>
+          <h6>Pick up/Delivery</h6>
+          <div class="form-group">
+            <button class="delivered"> &nbsp Delivery &nbsp</button>
+            <button class="collect"> &nbsp Pick Up &nbsp</button>
+          </div>
+          <div class="form-group">
+            <div class="branches">
+              <h6>Pick a branch</h6>
+              <select>
+                <option value="CBD">Loita Street</option>
+                <option value="Westlands">Westlands</option>
+                <option value="ngong">Ng'ong Road</option>
+                <option value="la">Lang'ata</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="toppings">What toppings do you want?</label>
-              <p>
-                <input type="checkbox" value="cheese"> Mozzarella
-                <input type="checkbox" value="sauce"> Sal's special sauce
-                <input type="checkbox" value="Basil"> Basil
-                <input type="checkbox" value="macon"> Macon
-                <input type="checkbox" value="pepperoni"> Pepperoni
-                <input type="checkbox" value="sausage"> Sausage
-                <input type="checkbox" value="mushrooms"> Mushrooms
-              </p>
-            </div>
           </div>
+          <input type="button" class="okay" value="Okay!">
+        </form>
       </div>
-      </form>
     </div>
-    <div class="row" id="gallery">
-      <div class="col-6">
+    <br>
+    <div class="row justify-content-center" id="gallery">
+      <div class="col-5">
         <img src="images/1.jpg" width="100%">
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <img src="images/2.jpg" width="100%">
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <img src="images/3.jpg" width="100%">
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <img src="images/4.jpg" width="100%">
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <img src="images/5.jpg" width="100%">
       </div>
-      <div class="col-6">
+      <div class="col-5">
         <img src="images/6.jpg" width="100%">
       </div>
     </div>
