@@ -53,22 +53,29 @@ $(document).ready(function () {
       var price = price * number
       $(".price").text("Your Order" + "\r\n" + number + " pizza(s)" + "\r\n" + "Size: " + size + " inches (diameter)" + "\r\n" + "Crust: " + crust + "\r\n" + "Toppings: " + toppings + "\r\n" + "Price: Ksh." + price)
 
-      $(".okay").click(function () {
-        // Delivery -> Price
-        if ($(".delivered").val(1)) {
-          alert("Subtotal: Ksh." + price + "\r\n" + "Delivery fee: Ksh.150" + "\r\n" + "Total: " + (price+=150))
-        }
-      })
+
       event.preventDefault();
     })
   })
   // Delivery/Pick Up
   $(".delivered").click(function () {
     $(".branches").hide();
-    $(".okay").show();
+    var place = prompt("Please enter the address where you would like the delivery to be made to")
+    alert("Your order will be delivered to " + place)
+    alert("Subtotal: Ksh." + price + "\r\n" + "Delivery fee: Ksh.150" + "\r\n" + "Total: " + (price += 150))
+
   })
   $(".collect").click(function () {
     $(".branches").show();
+    $(".address").hide();
     $(".okay").show();
+  })
+  $(".okay").click(function () {
+    if ($(".collect").val(1)) {
+      $("select.branch").change(function () {
+        var branch = $(this).children("option:selected").val();
+        alert("Kindly collect your order at the " + branch + " branch within the next 30 minutes.")
+      })
+    }
   })
 })
