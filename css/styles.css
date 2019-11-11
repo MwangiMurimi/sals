@@ -22,7 +22,7 @@ h6 {
 }
 
 .pic {
-  padding: 0px;
+  padding:5px;
 }
 
 #gallery {
@@ -60,6 +60,5 @@ textarea {
   display: none;
 }
 #sal {
-  float:left;
-  padding-right: 10px;
+  padding:0px;
 }
