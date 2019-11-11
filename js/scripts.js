@@ -18,35 +18,35 @@ $(document).ready(function () {
         price += 650
       }
       // Crust -> Price
-      if (crust === "crispy") {
+      if (crust === "Crispy") {
         price += 100
-      } else if (crust === "stuffed") {
+      } else if (crust === "Stuffed") {
         price += 150
-      } else if (crust === "gluten-free") {
+      } else if (crust === "Gluten Free") {
         price += 120
-      } else if (crust === "thin") {
+      } else if (crust === "Thin") {
         price += 80
       }
       // Toppings -> Price
-      if (toppings.includes("cheese") === true) {
+      if (toppings.includes("Mozzarella") === true) {
         price += 75
       }
-      if (toppings.includes("sauce") === true) {
+      if (toppings.includes("Sal's Secret Sauce") === true) {
         price += 75
       }
-      if (toppings.includes("basil") === true) {
+      if (toppings.includes("Basil") === true) {
         price += 50
       }
-      if (toppings.includes("pepperoni") === true) {
+      if (toppings.includes("Pepperoni") === true) {
         price += 50
       }
-      if (toppings.includes("macon") === true) {
+      if (toppings.includes("Macon") === true) {
         price += 50
       }
-      if (toppings.includes("mushrooms") === true) {
+      if (toppings.includes("Mushrooms") === true) {
         price += 50
       }
-      if (toppings.includes("chicken") === true) {
+      if (toppings.includes("Chicken") === true) {
         price += 50
       }
       // Number -> Price
