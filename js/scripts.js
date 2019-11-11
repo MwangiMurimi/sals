@@ -55,7 +55,7 @@ $(document).ready(function () {
 
       // Delivery/Pick Up
       $(".delivered").click(function () {
-        $(".branches").hide();
+        $(".branch").hide();
         var place = prompt("Please enter the address where you would like the delivery to be made to")
         prompt("For communication with delivery staff, kindly enter your phone no.")
         if (place === "") {
