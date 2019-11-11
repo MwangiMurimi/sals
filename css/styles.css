@@ -25,6 +25,12 @@ h6 {
   padding: 0px;
 }
 
+#gallery {
+  background-image: url(../images/pic-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 a {
   color: black;
 }
@@ -52,4 +58,7 @@ textarea {
 
 .okay {
   display: none;
+}
+#sal {
+  float:left;
 }
