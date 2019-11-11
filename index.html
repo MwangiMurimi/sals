@@ -20,16 +20,17 @@
       </div>
     </div>
     <div class="row justify-content-center" id="order">
-      <div class="col-12">
+      <div>
         <h6>Order online at Sal's Pizza</h6>
         <form class="form">
           <div class="form-group">
             <p><label for="size">Size</label></p>
-            <input type="range" id="size" min="12" max="24" step="6">
+            <input type="range" id="size" min="12" max="24" step="6" value="18">
           </div>
           <div class="form-group" id="crust">
             <p><label for="crust">Crust</label></p>
             <select class="crust">
+              <option value="" disabled selected>Select your option</option>
               <option id="crispy" value="crispy">Crispy</option>
               <option id="stuffed" value="stuffed">Stuffed</option>
               <option id="gluten-free" value="gluten-free">Gluten free</option>
@@ -60,19 +61,18 @@
             <button class="delivered"> &nbsp Delivery &nbsp</button>
             <button class="collect"> &nbsp Pick Up &nbsp</button>
           </div>
-          <div class="form-group">
-            <div class="branches">
-              <h6>Pick a branch</h6>
-              <select class="branch">
-                <option value="CBD">Loita Street</option>
-                <option value="Westlands">Westlands</option>
-                <option value="ngong">Ng'ong Road</option>
-                <option value="la">Lang'ata</option>
-              </select>
-            </div>
-          </div>
-          <input type="button" class="okay" value="Okay!">
         </form>
+        <div class="form-group branch">
+          <h6>Pick a branch</h6>
+          <select class="branches">
+            <option value="" disabled selected>Select your option</option>
+            <option value="CBD">CBD - Loita Street</option>
+            <option value="Westlands">Westlands - Opp. Unga House</option>
+            <option value="Prestige">Ng'ong Road - Prestige Plaza</option>
+            <option value="Galleria">Lang'ata - Galleria Mall</option>
+          </select>
+        </div>
+        <button class="okay">Okay!</button>
       </div>
     </div>
     <br>
