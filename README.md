@@ -1,6 +1,6 @@
 # Sals
 #### Landing page and page for online custom pizza ordering for Sal's Pizza.
-#### Version 1.0 created on: November 11, 2019
+#### Version 2.0 created on: November 11, 2019
 #### By Mwangi Murimi
 #### Live link
 http://mwangimurimi.github.io/sals
@@ -16,7 +16,7 @@ http://mwangimurimi.github.io/sals
 You may reach me at mwangimurimi@gmail.com if you have any questions, comments or concerns.
 
 ## Screenshot
-![screencapture-mwangimurimi-github-io-sals-2019-11-11-15_02_07](https://user-images.githubusercontent.com/56479833/68585808-4bb44e00-0494-11ea-83c3-384e047c57bb.png)
+![screencapture-file-home-mwangi-Desktop-moringa-school-projects-sals-index-html-2019-11-12-15_22_42](https://user-images.githubusercontent.com/56479833/68671421-520ffc00-0560-11ea-94b7-7d5ebf70231e.png)
 
 ## License
 ## MIT License
