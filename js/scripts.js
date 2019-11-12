@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $("#build").click( function () {
+    $("#build-a-pizza-prices").toggle();
+  })
   $("select.crust").change(function () {
     var crust = $(this).children("option:selected").val();
     $("form").submit(function () {
@@ -41,13 +44,13 @@ $(document).ready(function () {
         price += 50
       }
       if (toppings.includes("Macon") === true) {
-        price += 50
+        price += 75
       }
       if (toppings.includes("Mushrooms") === true) {
         price += 50
       }
       if (toppings.includes("Chicken") === true) {
-        price += 50
+        price += 75
       }
       // Number -> Price
       var price = price * number
