@@ -1,6 +1,6 @@
 # Sals
 #### Landing page and page for online custom pizza ordering for Sal's Pizza.
-#### Version 2.0 created on: November 11, 2019
+#### Version 2.0 created on: November 12, 2019
 #### By Mwangi Murimi
 #### Live link
 http://mwangimurimi.github.io/sals
